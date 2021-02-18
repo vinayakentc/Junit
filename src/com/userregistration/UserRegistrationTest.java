@@ -40,4 +40,16 @@ public class UserRegistrationTest {
         boolean result = userValidater.validateEmail("vinayak@.com");
         Assert.assertEquals(false,result);
     }
+    @Test
+    public void givenPhone_WhenProper_ShouldReturn_True() {
+        UserValidater userValidater = new UserValidater();
+        boolean result = userValidater.validatePhone("917218247215");
+        Assert.assertEquals(true,result);
+    }
+    @Test
+    public void givenPhone_WhenNotProper_ShouldReturn_False() {
+        UserValidater userValidater = new UserValidater();
+        boolean result = userValidater.validatePhone("8196756776");
+        Assert.assertEquals(false,result);
+    }
 }
