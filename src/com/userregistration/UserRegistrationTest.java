@@ -13,7 +13,7 @@ public class UserRegistrationTest {
     @Test
     public void givenFirstName_WhenNotProper_ShouldReturn_False() {
         UserValidater userValidater = new UserValidater();
-        boolean result = userValidater.validateFirstName("Vi");
+        boolean result = userValidater.validateFirstName("Ch");
         Assert.assertEquals(false,result);
     }
     @Test
@@ -43,25 +43,25 @@ public class UserRegistrationTest {
     @Test
     public void givenPhone_WhenProper_ShouldReturn_True() {
         UserValidater userValidater = new UserValidater();
-        boolean result = userValidater.validatePhone("91721824715");
+        boolean result = userValidater.validatePhone("9172184715");
         Assert.assertEquals(true,result);
     }
     @Test
     public void givenPhone_WhenNotProper_ShouldReturn_False() {
         UserValidater userValidater = new UserValidater();
-        boolean result = userValidater.validatePhone("9194543557");
+        boolean result = userValidater.validatePhone("8180086639");
         Assert.assertEquals(false,result);
     }
     @Test
     public void givenPassword_WhenProper_ShouldReturn_True() {
         UserValidater userValidater = new UserValidater();
-        boolean result = userValidater.validatePassword("vsncncbc7");
+        boolean result = userValidater.validatePassword("hcdgcF@#fg0");
         Assert.assertEquals(true,result);
     }
     @Test
     public void givenPassword_WhenNotProper_ShouldReturn_False() {
         UserValidater userValidater = new UserValidater();
-        boolean result = userValidater.validatePassword("hdhvahvmfvfh6");
+        boolean result = userValidater.validatePassword("vvsavh0cgc");
         Assert.assertEquals(false,result);
     }
 }
