@@ -43,25 +43,25 @@ public class UserRegistrationTest {
     @Test
     public void givenPhone_WhenProper_ShouldReturn_True() {
         UserValidater userValidater = new UserValidater();
-        boolean result = userValidater.validatePhone("917218247215");
+        boolean result = userValidater.validatePhone("91721824715");
         Assert.assertEquals(true,result);
     }
     @Test
     public void givenPhone_WhenNotProper_ShouldReturn_False() {
         UserValidater userValidater = new UserValidater();
-        boolean result = userValidater.validatePhone("9996515414");
+        boolean result = userValidater.validatePhone("9194543557");
         Assert.assertEquals(false,result);
     }
     @Test
     public void givenPassword_WhenProper_ShouldReturn_True() {
         UserValidater userValidater = new UserValidater();
-        boolean result = userValidater.validatePassword("1234A5678");
+        boolean result = userValidater.validatePassword("vsncncbc7");
         Assert.assertEquals(true,result);
     }
     @Test
     public void givenPassword_WhenNotProper_ShouldReturn_False() {
         UserValidater userValidater = new UserValidater();
-        boolean result = userValidater.validatePassword("123hbcbcbfe");
+        boolean result = userValidater.validatePassword("hdhvahvmfvfh6");
         Assert.assertEquals(false,result);
     }
 }
