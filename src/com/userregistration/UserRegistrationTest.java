@@ -43,7 +43,7 @@ public class UserRegistrationTest {
     @Test
     public void givenPhone_WhenProper_ShouldReturn_True() {
         UserValidater userValidater = new UserValidater();
-        boolean result = userValidater.validatePhone("91721824715");
+        boolean result = userValidater.validatePhone("917218247215");
         Assert.assertEquals(true,result);
     }
     @Test
@@ -55,13 +55,13 @@ public class UserRegistrationTest {
     @Test
     public void givenPassword_WhenProper_ShouldReturn_True() {
         UserValidater userValidater = new UserValidater();
-        boolean result = userValidater.validatePassword("vndnfhG@fg0");
+        boolean result = userValidater.validatePassword("vhjsbcA@fg0");
         Assert.assertEquals(true,result);
     }
     @Test
     public void givenPassword_WhenNotProper_ShouldReturn_False() {
         UserValidater userValidater = new UserValidater();
-        boolean result = userValidater.validatePassword("gdvncs0daS");
+        boolean result = userValidater.validatePassword("asdcvu0daS");
         Assert.assertEquals(false,result);
     }
 }
